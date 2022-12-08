@@ -1,0 +1,1 @@
+docker run -t --rm -p 8501:8501 -v "$(pwd)/saved_models/:/models/review" -e MODEL_NAME=review tensorflow/serving

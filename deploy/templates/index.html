@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootcamp Project</title>
+    </head>
+
+    <body>
+        <h1 class="text-center">Five Star Classification</h1>
+
+        <form class="p-3 text-center" action="/" method="post" enctype="multipart/form-data">
+            <input class="form-control" name="text">
+            <input class="btn btn-primary mt-3" type="submit" value="Predict Text">
+        </form>
+
+        {% if prediction %}
+            <p class="text-center">{{prediction}}</p>
+        {% endif %}
+    </body>
+</html>
